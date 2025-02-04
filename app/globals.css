@@ -1,0 +1,290 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f49b;
+  color: black;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+h1 , h2 , h3{
+  font-weight: bold;
+}
+
+/* header section */
+
+.header{
+  padding: 20px;
+  background-color: blue;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo{
+  font-size: 24px;
+  color: white;
+}
+.header nav{
+  display: flex;
+  gap: 40px;
+}
+.header nav a{
+  color: white;
+  font-weight: bold;
+  
+}
+.header nav a:hover{
+  text-decoration: underline;
+}
+
+/* footer section */
+
+footer{
+  padding: 20px;
+  background-color: #222;
+  color: white; 
+  text-align: center;
+}
+footer p{
+  margin: 0;
+}
+
+/* hero section */
+.hero{
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding-bottom: 300px;
+}
+.hero h1{
+  font-weight: bold;
+  font-size: 50px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.hero p{
+  font-size: 30px;
+  margin-top:10px;
+}
+.hero button{ 
+  margin-top:20px ;
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  font-weight:none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3 ease;
+}
+.hero button:hover{
+  background-color: blue;
+}
+
+/* about section */
+
+.about{
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+}
+.about-container{
+ max-width: 600px;
+ text-align: left;
+ background: rgba(0, 0, 0, 0.6);
+ padding: 30px;
+ border-radius: 10px;
+}
+.about-container p{
+  padding-top: 20px;
+}
+
+/* watches section */
+
+/* Main Container */
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Title */
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Product Card */
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Image */
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Product Name */
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Product Description */
+.description {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Price */
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+  margin: 10px 0;
+}
+
+/* Buy Now Button */
+.button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* contact section */
+
+/* Wrapper for Flexbox Layout */
+.contact-wrapper {
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  height: 100vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Side - Company Info (Centered) */
+.contact-info {
+  width: 50%;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px 0 0 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  text-align: left;
+}
+
+.contact-info h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 20px;
+  color: #333;
+  margin: 5px 0;
+}
+
+/* Right Side - Contact Form */
+.contact-container {
+  width: 60%;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Form Fields */
+input, textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  padding: 10px;
+  background: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: darkblue;
+}
+
+/* Responsive for Small Screens */
+@media (max-width: 600px) {
+  .contact-wrapper {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .contact-info, .contact-container {
+      width: 100%;
+      border-radius: 8px;
+  }
+
+  .contact-info {
+      text-align: center;
+  }
+}
