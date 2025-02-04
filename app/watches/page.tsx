@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 export default function Watches() {
     const watchData = [
@@ -17,7 +18,7 @@ export default function Watches() {
             <div className="grid">
                 {watchData.map((watch) => (
                     <div key={watch.id} className="card">
-                        <img src={watch.image} alt={watch.name} className="image" />
+                         <Image src={watch.image} alt={watch.name} width={200} height={200} className="image" />
                         <h2 className="name">{watch.name}</h2>
                         <p className="description">{watch.describe}</p>
                         <p className="price">${watch.price.toLocaleString()}</p>
